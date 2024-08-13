@@ -4,6 +4,7 @@ import { Text, View } from 'react-native';
 import { StackNavigator } from './StackNavigator';
 import { Reserve } from '../screens';
 import { Icon } from '../components/Icon';
+import { ChatScreen } from '../screens/ChatScreen';
 
 const Tab = createBottomTabNavigator()
 
@@ -11,8 +12,10 @@ export const BottomTabsNavigation = () => {
   return (
 
     <Tab.Navigator
+
       screenOptions={{
         tabBarActiveTintColor: "#f49230",
+        headerRight: () => <Icon name="help-circle-outline" color='white'/>
       }}
     >
       <Tab.Screen 
@@ -34,6 +37,19 @@ export const BottomTabsNavigation = () => {
           },
           title: 'Reserva',
           tabBarIcon: ({color}) => (<Icon name={"calendar"} color={color}/>)
+          
+        }}
+      />
+      <Tab.Screen 
+        name='Chat' 
+        component={ChatScreen} 
+        options={{
+          headerTintColor: "#fff",
+          headerStyle: {
+            backgroundColor: "#f49230",
+          },
+          title: 'Asistente',
+          tabBarIcon: ({color}) => (<Icon name={"chatbox"} color={color}/>)
           
         }}
       />

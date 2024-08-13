@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "612572654086",
+    "project_id": "borrame-803be",
+    "storage_bucket": "borrame-803be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612572654086:android:809bdc3e95174a0831f187",
+        "android_client_info": {
+          "package_name": "com.juanjose02.queimadaApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612572654086-6plj8gtqru7brkfohhnuop0k6pohn8pv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.juanjose02.queimadaApp",
+            "certificate_hash": "6ec0b0cefa514ac51d913c3ce430ca2dc3c38450"
+          }
+        },
+        {
+          "client_id": "612572654086-73esfua3fqbu9pnn5ep4iuhinp31pg3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.juanjose02.queimadaApp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "612572654086-k8e98p60ddukeaau48i0d0v33knocea5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjy8ZF_LfkIHVzcXEQMbJt1CW-fTNI-0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612572654086-k8e98p60ddukeaau48i0d0v33knocea5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

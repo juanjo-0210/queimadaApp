@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import {Text, View, FlatList, StyleSheet, ImageBackground, Pressable} from 'react-native';
+import {Text, View, FlatList, StyleSheet, ImageBackground, Pressable, Alert} from 'react-native';
 import { getGamesFromFirebase } from '../service/getGamesFromFirebase';
-import { createCleanData, filterRealName } from '../utils/filterRealGame';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 import { RootStackParams } from '../routes/StackNavigator';
 import { Searchbar, ToggleButton } from 'react-native-paper';
 import { searchQueryData } from '../service/searchQuery';
-import { translate } from '../api/translate';
 
 export const Home = () => {
 
@@ -18,7 +16,13 @@ export const Home = () => {
 
   useEffect(() => {
 
-    getGamesFromFirebase().then(setGames)
+    try {
+
+      getGamesFromFirebase().then(setGames)
+    } catch (error) {
+      Alert.alert("error en la consulta")
+    }
+    
 
   },[])
 
@@ -32,7 +36,6 @@ export const Home = () => {
    
 
   },[searchQuery])
-  
 
   return (
     <View style={styles.container}>

@@ -1,6 +1,7 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import { Game, Home } from '../screens';
+import { Icon } from '../components/Icon';
 
 export type RootStackParams = {
   home: undefined
@@ -14,8 +15,10 @@ export const StackNavigator = () => {
     <Stack.Navigator
       screenOptions={{
         headerTintColor: "#fff",
+        headerRight: () => <Icon name="help-circle-outline" color='white'/>,
         headerStyle: {
           backgroundColor: "#f49230",
+          
         },
       }}
     >
